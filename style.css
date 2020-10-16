@@ -165,6 +165,12 @@ footer {
     footer .copyright a {
       padding: 0 .2rem; }
 
+.red-section {
+  background: #631111 url("img/page/home-bg/home-bg-3.jpg") center center;
+  background-blend-mode: overlay;
+  background-size: cover;
+  color: #fff; }
+
 .section-spacer {
   padding: 100px 0; }
 
@@ -173,13 +179,6 @@ footer {
   color: var(--gray) !important; }
   .brand-logos:hover {
     border-color: var(--red) !important; }
-
-.faq {
-  color: #fff;
-  background: #631111 center center;
-  background-blend-mode: overlay;
-  background-size: cover;
-  background-image: url("img/page/home-bg/home-bg-3.jpg"); }
 
 /*------------------------------------*\
     RESPONSIVE

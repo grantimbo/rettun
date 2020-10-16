@@ -12,20 +12,6 @@ const toggleMenu = () => {
 }
 
 
-// contact
-const btnGeneral = () =>  {
-    document.querySelector('.btn.investor').classList.remove('active');
-    document.querySelector('.btn.general').classList.add('active');
-    document.querySelector('p.existing-holder').classList.add('d-none');
-}
-const btnInvestor = () => {
-    document.querySelector('.btn.general').classList.remove('active');
-    document.querySelector('.btn.investor').classList.add('active');
-    document.querySelector('p.existing-holder').classList.remove('d-none');
-}
-
-
-
 console.log(
 ' -------------------------------\n',
 'Author : Grant Imbo\n',
