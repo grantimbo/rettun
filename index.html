@@ -3,9 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rettun</title>
+    <link rel="shortcut icon" href="/img/icons/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/img/icons/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Rettun LLC | Online Retailer</title>
 </head>
 <body>
-    hello world
+
+<header class="head bg-white">
+    <button class="menu-toggle" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+    </button>
+    
+    <a href="/"><img src="img/logo.png" alt="" class="logo"></a>
+
+    <div class="tae">
+        <nav class="menu-nav">
+            <li><a href="">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/videos">Legal</a></li>
+        </nav>
+        <nav class="social-head">
+            <a target="_blank" href="#"><i class="fab fa-linkedin"></i></a>
+            <a target="_blank" href="https://www.instagram.com/monchelsharp/"><i class="fab fa-instagram"></i></a>
+            <a target="_blank" href="#"><i class="fab fa-facebook"></i></a>
+            <a target="_blank" href="#"><i class="fab fa-twitter"></i></a>
+            <a target="_blank" href="#"><i class="fab fa-youtube"></i></a>
+        </nav>
+        <div class="menu-shadow" onclick="toggleMenu()"></div>
+    </div>
+</header>
+
+<section class="slider">
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active" style="background-image:url(/img/page/home-bg/home-bg-1.jpg);">
+            <div class="carousel-caption">
+                <div class="contents">
+                    <h1>Welcome to Rettun LLC</h1>
+                    <p>If you are an existing customer looking to see our brands or have a problem with one of our product. Then you can scroll to the bottom of this page and you will see a direct link to our brand websites, simply follow the link and contact our specialised customer services teams via the brand website. This is our corporate website.</p>
+                    <a href="#" class="btn btn-lg btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item" style="background-image:url(/img/page/home-bg/home-bg-2.jpg);">
+            <div class="carousel-caption">
+                <div class="contents">
+                        <h1>Highest Quality Product</h1>
+                        <p>Rettun LLC has always had the goal of creating the highest quality products and from this goal has grown from a small family business into a dominant player within the Manufacturing & Online Retail space.</p>
+                        <a href="#ourbrands" class="btn btn-lg btn-primary">Our Brands</a>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item" style="background-image:url(/img/page/home-bg/home-bg-3.jpg);">
+            <div class="carousel-caption">
+                <div class="contents">
+                    <h1>A Brief History</h1>
+                    <p>Started by 2 brothers from humble beginnings with a simple dream of manufacturing and developing high quality products and having their brands recognised worldwide. Within 5 years Rettun has grown from a small start up to a powerful Top 1% Amazon Seller with its own offices and highly skilled team, all while claiming their prominent position in the manufacturing sector.</p>
+                    <a href="#" class="btn btn-lg btn-primary">About Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+    </div>
+</section>
+
+<section id="ourbrands" class="container text-center pt-5 pb-5">
+    <h1 class="pt-5 pb-5">Our Brands</h1>
+    <div class="row">
+        <div class="col-6 col-lg-3 mb-4">
+            <a href="http://go-beast.com/" target="_blank" class="border bg-light brand-logos">
+            <img src="/img/page/brands/go-beast.png" class="img-fluid" alt="GoBeast">
+            <p>GoBeast</p>
+            </a>
+        </div>
+        <div class="col-6 col-lg-3 mb-4">
+            <a href="http://tuffmantools.com/" target="_blank" class="border bg-light brand-logos">
+            <img src="/img/page/brands/tuffman-tools.png" class="img-fluid" alt="TuffMan Tools">
+            <p>TuffMan Tools</p>
+            </a>
+        </div>
+        <div class="col-6 col-lg-3 mb-4">
+            <a href="#" target="_blank" class="border bg-light brand-logos">
+            <img src="/img/page/brands/everything-automotive.png" class="img-fluid" alt="Everything Automobiles">
+            <p>Everything Automobiles</p>
+            </a>
+        </div>
+        <div class="col-6 col-lg-3 mb-4">
+            <a href="#" target="_blank" class="border bg-light brand-logos">
+            <img src="/img/page/brands/cuddler.png" class="img-fluid" alt="Cuddlerr">
+            <p>Cuddlerr</p>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="faq">
+    <div class="container">
+        <h1>Frequently Ask Questions</h1>
+        <p>If you are here for a legal issue, then please reach out to our legal representative, you can do this by visiting our Legal page and we can resolve this problem.</p>
+        <p>If you are a customer who has accidently come to our corporate sitethen you can click the link below to the correct brand you require. </p>
+        <p>If you have a problem with your new purchase please reach out and wewill put this right. You can contact the our customer services teamhere: Contact@rettun.com</p>
+    </div>
+</section>
+
 </body>
+<script src="/js/bootstrap.bundle.min.js"></script>
+<script src="/js/scripts.js"></script>
 </html>
