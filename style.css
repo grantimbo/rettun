@@ -165,22 +165,21 @@ footer {
     footer .copyright a {
       padding: 0 .2rem; }
 
+.section-spacer {
+  padding: 100px 0; }
+
 .brand-logos {
   display: block;
   color: var(--gray) !important; }
   .brand-logos:hover {
     border-color: var(--red) !important; }
 
-.ourbrands {
-  padding: 100px 0; }
-
 .faq {
-  padding: 100px 0;
   color: #fff;
   background: #631111 center center;
   background-blend-mode: overlay;
   background-size: cover;
-  background-image: url("/img/page/home-bg/home-bg-3.jpg"); }
+  background-image: url("img/page/home-bg/home-bg-3.jpg"); }
 
 /*------------------------------------*\
     RESPONSIVE
