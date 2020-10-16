@@ -1,3 +1,5 @@
-##### Rettun site rebuild. 
+### Rettun LLC site rebuild. 
 
-Preview: https://grantimbo.github.io/rettun/
+Static Preview: https://grantimbo.github.io/rettun/
+
+Converted WP theme is inside the **wp-theme** folder.
