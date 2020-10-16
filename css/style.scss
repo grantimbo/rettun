@@ -9,8 +9,11 @@
 */
 :root {
 	--gray: #2b2b2b;
-	--red: #be0e0e;
+	--red: #c51b1b;
 	--sliderColor: #2b2e31;
+}
+html {
+	scroll-behavior: smooth;
 }
 body {
 	color: var(--gray);
@@ -21,24 +24,40 @@ body {
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
 }
+
 h1,h2,h3,h4,h5,h6,b {
 	font-family: 'gotham_medium', Helvetica, Arial, sans-serif;
 }
-.btn-lg {
-	padding: .8rem 2rem;
-}
+
 a {
 	color: var(--red);
 	text-decoration: none;
+	transition: all .3s;
+
+	&:hover {
+		color:#0084ff;
+	}
 }
-.btn-primary {
-	background: var(--red);
-	border-radius: 0;
-	border: 0;
+
+.btn {
+	&.btn-lg {
+		padding: .8rem 2rem;
+	}
+
+	&.btn-primary {
+		background: var(--red);
+		border-radius: 0;
+		border: 0;
+		opacity: 1;
+		transition: all .3s;
+	
+		&:hover {
+			background: #fd3030;
+			opacity: .8;
+		}
+	}
 }
-.btn-primary:hover {
-	background: #ca3d3d;
-}
+
 
 // header
 header {
@@ -123,7 +142,7 @@ header {
 		&.active {
 			visibility: visible;
 			opacity: .5;
-			background: #828282;
+			background: #181a1d;
 			position: fixed;
 			top: 0;
 			bottom: 0;
@@ -159,10 +178,6 @@ header {
 					display: flex;
 					align-items: center;
 					justify-content: center;
-
-					.contents {
-
-					}
 				}
 			}
 		}
@@ -172,11 +187,12 @@ header {
 }
 
 footer {
-	color: #000000;
+	color: #fff;
 	text-align: center;
+	background-color: var(--sliderColor);
 
 	.privacy-links {
-		border-bottom: 1px solid #d4d8da;
+		border-bottom: 1px solid #363636;
 		padding: 1rem;
 		a {
 			font-size: 1rem;
@@ -211,10 +227,13 @@ footer {
 	}
 }
 
+// helper class
+.section-spacer {
+	padding: 100px 0;
+}
 
 // home page
 .brand-logos {
-	transition: all .5s;
 	display: block;
 	color: var(--gray) !important;
 
@@ -224,7 +243,11 @@ footer {
 }
 
 .faq {
-	background: #ca3d3d;
+	color: #fff;
+	background: #631111 center center;
+	background-blend-mode: overlay;
+	background-size: cover;
+	background-image: url('/img/page/home-bg/home-bg-3.jpg');
 }
 
 /*------------------------------------*\
@@ -239,6 +262,13 @@ footer {
 	
 	.home-boxes {
 		min-height: 180px;
+	}
+
+	.faq {
+		.container {
+			max-width: 700px;
+			margin: 0 auto;
+		}
 	}
 	
 }
