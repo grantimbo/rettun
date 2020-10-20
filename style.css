@@ -165,11 +165,14 @@ footer {
     footer .copyright a {
       padding: 0 .2rem; }
 
-.red-section {
-  background: #631111 url("img/page/home-bg/home-bg-3.jpg") center center;
+.imgSection {
   background-blend-mode: overlay;
   background-size: cover;
   color: #fff; }
+  .imgSection.blackSection {
+    background: var(--sliderColor) url("img/page/home-bg/home-bg-1.jpg") center center; }
+  .imgSection.redSection {
+    background: #631111 url("img/page/home-bg/home-bg-3.jpg") center center; }
 
 .section-spacer {
   padding: 100px 0; }
@@ -186,8 +189,8 @@ footer {
 @media (min-width: 992px) {
   .home-boxes {
     min-height: 180px; }
-  .faq .container {
-    max-width: 700px;
+  .smallContainer {
+    max-width: 1000px;
     margin: 0 auto; } }
 
 /*------------------------------------*\
