@@ -145,11 +145,10 @@ footer {
   text-align: center;
   background-color: var(--sliderColor); }
   footer .privacy-links {
-    border-bottom: 1px solid #363636;
-    padding: 1rem; }
+    padding: 1rem 0; }
     footer .privacy-links a {
       font-size: 1rem;
-      margin-right: 1rem; }
+      margin-left: 1rem; }
   footer .social-links a {
     padding: .3rem;
     font-size: 1.2rem; }
