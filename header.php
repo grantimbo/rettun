@@ -19,9 +19,7 @@
 
     <div class="tae">
         <nav class="menu-nav">
-            <li><a href="<?php echo get_bloginfo('wpurl'); ?>">Home</a></li>
-            <li><a href="<?php echo get_bloginfo('wpurl'); ?>/about">About</a></li>
-            <li><a href="<?php echo get_bloginfo('wpurl'); ?>/legal">Legal</a></li>
+            <?php header_links(); ?>
         </nav>
         <div class="menu-shadow" onclick="toggleMenu()"></div>
     </div>

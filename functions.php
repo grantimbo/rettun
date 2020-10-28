@@ -7,8 +7,7 @@
  // Add Theme Support
 if (function_exists('add_theme_support')) {
 
-    // Add thumbnail
-    add_theme_support('post-thumbnails');
+    add_theme_support('menus');
 }
 
 
@@ -44,7 +43,43 @@ function header_styles() {
 
 }
 
+// remove wp-admin menus
+function remove_menus() {
 
+    remove_menu_page( 'edit.php' ); // Post
+    remove_menu_page( 'upload.php' ); // Post
+    remove_menu_page( 'tools.php' ); // Tools
+    remove_menu_page( 'plugins.php' ); // Tools
+    remove_menu_page( 'edit-comments.php' ); // Comments
+
+}
+
+
+// Add links
+function header_links() {
+    wp_nav_menu( array(
+        'container' => '',
+        'items_wrap' => '%3$s',
+        'theme_location' => 'header-menu',
+        )
+    );
+}
+
+function footer_links() {
+    wp_nav_menu( array(
+        'container' => '',
+        'items_wrap' => '%3$s',
+        'theme_location' => 'footer-menu',
+        )
+    );
+}
+
+function register_menus() {
+    register_nav_menus( array( // Using array to specify more menus if needed
+        'header-menu' => __('Header Menu', 'rettun'), // Sidebar Navigation
+        'footer-menu' => __('Footer Menu', 'rettun'), // Sidebar Navigation
+    ));
+}
 
 
 /*------------------------------------*\
@@ -54,3 +89,5 @@ function header_styles() {
 // Add Actions
 add_action('init', 'header_scripts'); // Add Custom Scripts to wp_head
 add_action('wp_enqueue_scripts', 'header_styles'); // Add Theme Stylesheet
+add_action( 'admin_init', 'remove_menus' ); // Remove Admin Menus
+add_action('init', 'register_menus'); // Add header and footer menus

@@ -24,7 +24,7 @@ body {
     -webkit-font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
 	
-	&.logged-in header .menu-nav {
+	&.admin-bar header .menu-nav {
 		top: 32px;
 	}
 }
@@ -106,6 +106,12 @@ header {
 			margin: 0;
 			list-style: none;
 			position: relative;
+
+			&.current-menu-item {
+				a {
+					color: var(--red); 
+				}
+			}
 			
 			a {
 				display: block;

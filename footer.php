@@ -9,8 +9,7 @@
             <div class="col-lg-6 copyright text-right">
                 <p>Copyright @ <?php echo date('Y'); ?> - Rettun LLC. All Rights Reserved</p>
                 <div class="privacy-links">
-                    <a href="<?php echo get_bloginfo('wpurl'); ?>/about">About &amp; Contact</a>
-                    <a href="<?php echo get_bloginfo('wpurl'); ?>/legal">Legal</a>
+                    <?php footer_links(); ?>
                 </div>
             </div>
         </div>
