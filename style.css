@@ -194,7 +194,11 @@ footer {
     min-height: 180px; }
   .smallContainer {
     max-width: 1000px;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+  footer {
+    text-align: left; }
+    footer .copyright {
+      text-align: right; } }
 
 /*------------------------------------*\
     TYPES
