@@ -3,7 +3,7 @@
 	Theme Name: Rettun
 	Theme URI: http://rettun.com/
 	Description: Custom theme made by Grant Imbo for Rettun.com
-	Version: 1.0
+	Version: 1
 	Author: Grant Imbo
 	Author URI: http://grantimbo.com/
 	Tags: clean, minimalist, clean theme, holdings, llc
@@ -24,8 +24,6 @@ body {
   font: 300 16px/1.3 'gotham_book', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility; }
-  body.logged-in header .menu-nav {
-    top: 32px; }
 
 h1, h2, h3, h4, h5, h6, b {
   font-family: 'gotham_medium', Helvetica, Arial, sans-serif; }
@@ -176,7 +174,7 @@ footer {
     background: #631111 url("img/page/home-bg/home-bg-3.jpg") center center; }
 
 .section-spacer {
-  padding: 100px 1rem; }
+  padding: 100px 0; }
 
 .brand-logos {
   display: block;

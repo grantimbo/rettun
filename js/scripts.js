@@ -1,6 +1,6 @@
 /* -------------------------------
 Author : Grant Imbo (grantimbo.com)
-Version : 1
+Version : 1.0
 Description : Writted by @grantimbo for rettun.com
 ------------------------------- */
 
@@ -15,7 +15,7 @@ const toggleMenu = () => {
 console.log(
 ' -------------------------------\n',
 'Author : Grant Imbo\n',
-'Version : 1\n',
+'Version : 1.0\n',
 'Theme Repository : https://github.com/grantimbo/rettun\n',
 'Description : Writted by @grantimbo for rettun.com\n',
 '-------------------------------' );
